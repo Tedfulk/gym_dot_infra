@@ -16,6 +16,7 @@ build/
 # Environments
 .venv/
 env/
+.env
 venv/
 ENV/
 env.bak/
@@ -47,3 +48,5 @@ logs/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+gym_dot_infra_dev_db.sqlite3
