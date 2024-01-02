@@ -7,12 +7,7 @@ This is a basic scaffold for a FastAPI application.
 The project has the following structure:
 
 - `app/main.py`: The entry point of the FastAPI application.
-- `app/api/__init__.py`: Initializes the `api` package.
-- `app/models/__init__.py`: Initializes the `models` package.
-- `app/services/__init__.py`: Initializes the `services` package.
 - `tests/test_main.py`: Contains tests for the `main.py` file.
-- `.env`: Contains environment variables for the application.
-- `requirements.txt`: Lists the Python packages that the application depends on.
 
 ## Setup
 
@@ -25,7 +20,7 @@ poetry install
 1. Run the application:
 
 ```bash
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 ## Testing
@@ -35,15 +30,6 @@ To run the tests, use the following command:
 ```bash
 pytest
 ```
-
-## Environment Variables
-
-The `.env` file should contain the following environment variables:
-
-- `DATABASE_URL`: The URL of the database that the application will connect to.
-- `SECRET_KEY`: A secret key used for security purposes.
-
-Remember to replace the placeholders with your actual data.
 
 ## Contributing
 
